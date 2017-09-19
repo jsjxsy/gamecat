@@ -1,0 +1,33 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion global_compileSdkVersion
+    buildToolsVersion global_buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion global_minSdkVersion
+        targetSdkVersion global_targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    provided files('libs/commons-codec-1.2.jar')
+    provided files('libs/okhttp-3.4.1.jar')
+    provided files('libs/okhttputils2.6.2.jar')
+    provided files('libs/okio-1.9.0.jar')
+    provided files('libs/fastjson-1.1.52.android.jar')
+    provided files('libs/alicloud-android-sdk-man-1.1.5.jar')
+    provided files('libs/alisdk-ut-5.jar')
+    provided files('libs/utdid4all-1.0.4.jar')
+    compile "com.android.support:support-v4:${global_supportLibraryVersion}"
+    //    compile "com.android.support:appcompat-v7:${global_supportLibraryVersion}"
+    provided files('libs/glide-3.7.0.jar')
+}

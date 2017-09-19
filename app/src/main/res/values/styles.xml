@@ -1,0 +1,63 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+
+
+    </style>
+
+    <style name="Widget"></style>
+
+
+    <style name="gamecat_button_common_orange">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">38dp</item>
+        <item name="android:background">@drawable/gamecat_selector_button_login</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/gamecat_color_333</item>
+    </style>
+
+    <style name="gamecat_item_input_edittext">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:minHeight">40dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/gamecat_color_ffffff</item>
+        <item name="android:textColorHint">@color/gamecat_hint_color</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+
+    <style name="option_sildingmenu_right">
+        <item name="android:layout_width">13dip</item>
+        <item name="android:layout_height">15dip</item>
+        <item name="android:layout_marginRight">15dp</item>
+    </style>
+
+    <style name="Theme.AppStartLoad" parent="android:Theme.Black.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@drawable/start_sdk</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,10 @@
+gamecat_sdk_small:gamecatsdk:unspecified
+com.android.support:support-vector-drawable:23.2.1
+gamecat_sdk_small:sdkokhttpdownload:unspecified
+com.android.support:animated-vector-drawable:23.2.1
+gamecat_sdk_small:sdkproxylib:unspecified
+net.wequick.small:small:1.1.0-alpha1
+com.android.support:support-v4:23.2.1
+com.android.support:appcompat-v7:23.2.1
+com.android.support:recyclerview-v7:23.2.1
+com.android.support:design:23.2.1

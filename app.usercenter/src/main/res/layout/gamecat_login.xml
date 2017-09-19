@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="@dimen/login_dialog_width"
+        android:layout_height="@dimen/login_dialog_height"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/gamecat_shape_background"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:id="@+id/id_layout_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/id_login_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/game_cat_login_icon"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="游戏猫登录"
+                    android:textColor="@color/gamecat_color_ffffff"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/id_text_view_miss_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="找回密码"
+                    android:textColor="@color/gamecat_color_cccccc"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/id_layout_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/id_layout_title"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/gamecat_shape_input_background"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <RelativeLayout
+                    android:id="@+id/id_edit_text_input_password_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <EditText
+                        android:id="@+id/id_edit_text_input_phone"
+                        style="@style/gamecat_item_input_edittext"
+                        android:drawableLeft="@drawable/game_cat_login_input_phone"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:hint="喵号/手机号"
+                        android:inputType="number"
+                        android:maxLength="11" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/id_text_view_input_tip"
+                            style="@style/game_cat_text_view_tip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="11dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/id_image_view_clear"
+                            android:text="账号不存在" />
+
+                        <TextView
+                            android:id="@+id/id_text_view_wrong_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="11dp"
+                            android:layout_marginRight="24dp"
+                            android:text="@string/gamecat_wrong_phone_number"
+                            android:textColor="@color/gamecat_color_f74c31"
+                            android:textSize="10dp"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/id_image_view_clear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="6dp"
+                            android:src="@drawable/game_cat_login_clear" />
+
+                        <ImageView
+                            android:id="@+id/id_image_view_up_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:src="@drawable/game_cat_login_down_arrow" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/color_E5E5E5" />
+
+                <com.youximao.sdk.lib.common.common.widget.ListViewInScrollView
+                    android:id="@+id/id_list_view_switch_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@color/color_666666"
+                    android:dividerHeight="0.5dp"
+                    android:footerDividersEnabled="true"
+                    android:headerDividersEnabled="true"
+                    android:scrollbars="none"
+                    android:visibility="gone" />
+                <View
+                    android:id="@+id/id_line_down_list_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/color_E5E5E5"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <EditText
+                        android:id="@+id/id_password_edit"
+                        style="@style/gamecat_item_input_edittext"
+                        android:drawableLeft="@drawable/game_cat_login_input_password"
+                        android:drawablePadding="10dp"
+                        android:hint="输入密码"
+                        android:inputType="textPassword"
+                        android:maxLength="18" />
+
+                    <TextView
+                        android:id="@+id/id_text_view_password_tip"
+                        style="@style/game_cat_text_view_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginRight="11dp"
+                        android:text="密码不正确" />
+
+                    <TextView
+                        android:id="@+id/id_text_view_password_wroing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginRight="11dp"
+                        android:text="密码为6-18位数字/字母"
+                        android:textColor="@color/gamecat_color_ffcc00"
+                        android:textSize="10dp"
+                        android:visibility="gone"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/id_text_view_wrong_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginRight="11dp"
+                        android:text="@string/gamecat_wrong_password"
+                        android:textColor="@color/gamecat_color_f74c31"
+                        android:textSize="10dp"
+                        android:visibility="gone"
+
+                        />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/id_login_button"
+                style="@style/gamecat_button_common"
+                android:layout_below="@id/id_layout_input"
+                android:layout_marginTop="5dp"
+                android:text="进入游戏" />
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id_login_button"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/id_text_view_phone_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/game_cat_login_phone_register"
+                    android:text="手机注册"
+                    android:textColor="@color/gamecat_color_cccccc"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/id_text_view_qq_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/game_cat_login_qq_login"
+                    android:text="QQ登录"
+                    android:textColor="@color/gamecat_color_cccccc"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/id_text_view_quick_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/game_cat_login_quick_register"
+                    android:text="快速注册"
+                    android:textColor="@color/gamecat_color_cccccc"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

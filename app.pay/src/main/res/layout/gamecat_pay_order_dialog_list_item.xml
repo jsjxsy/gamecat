@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@color/gamecat_color_ffffff"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/li"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/checkbox"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/vouchers_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:text="500代金券"
+                android:textColor="@color/color_666666"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/before_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vouchers_amount"
+                android:text="有效期至：2016-07-06"
+                android:textColor="@color/color_666666"
+                android:textSize="14dp"
+
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RadioButton
+        android:id="@+id/checkbox"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/gamecatpay_checkbox"
+        android:button="@null"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center_vertical" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_E5E5E5" />
+</RelativeLayout>

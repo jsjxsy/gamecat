@@ -1,0 +1,11 @@
+include ':app',
+        ':app.logout',
+        ':lib.database',
+        ':app.usercenter',
+        ':app.pay',
+        ':app.splash', ':app.peckgifts',
+        ':app.personal',
+        ':app.forum', ':lib.style', ':lib.common', ':lib.alianalytics', ':app.main',
+        ':app.floatwindow',
+        ':sdkokhttpdownload', ':sdkproxylib', ':gamecatsdk',
+        ':sample'

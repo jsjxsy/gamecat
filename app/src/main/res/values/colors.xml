@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--login-->
+    <color name="gamecat_hint_color">#9A9A9A</color>
+    <color name="gamecat_color_ffffff">#ffffffff</color>
+    <color name="gamecat_color_ff7e15">#ff7e15</color>
+    <color name="gamecat_color_e8e8e8">#e8e8e8</color>
+    <color name="gamecat_color_f9f9f9">#f9f9f9</color>
+    <color name="gamecat_color_333">#333</color>
+    <color name="gamecat_color_55c8fd">#55c8fd</color>
+    <color name="gamecat_color_b1b1b1">#b1b1b1</color>
+    <color name="gamecat_color_f74c31">#f74c31</color>
+    <color name="gamecat_color_EBBFA4">#EBBFA4</color><!-- #0b751e -->
+    <color name="gamecat_color_background">#D937363B</color>
+    <color name="gamecat_color_login_input_background">#66242635</color>
+
+</resources>

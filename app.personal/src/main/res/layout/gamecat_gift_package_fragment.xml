@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gamecat_color_D9000000"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48.5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/gamecat_gift_package"
+            android:textColor="@color/color_FFFFFF"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_my_gift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="@string/gamecat_mygift_package"
+            android:textColor="@color/color_FFCC00"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gamecat_color_33FFFFFF" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.youximao.sdk.lib.common.common.widget.ptr.PtrClassicFrameLayout
+            android:id="@+id/ptr_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.youximao.sdk.lib.common.common.widget.ptr.loadmore.LoadMoreListViewContainer
+                android:id="@+id/ptr_loadmore"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ListView
+                    android:id="@+id/lv_gift"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </com.youximao.sdk.lib.common.common.widget.ptr.loadmore.LoadMoreListViewContainer>
+        </com.youximao.sdk.lib.common.common.widget.ptr.PtrClassicFrameLayout>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/id_layout_item"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="12dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="12dp"
+    tools:context=".activity.UserActivity">
+
+
+    <ImageView
+        android:id="@+id/id_image_view_account_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/game_cat_account_qq" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@id/id_image_view_account_type"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/id_text_view_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_666666"
+            android:textSize="12sp"
+            tools:text="13003671973" />
+
+        <TextView
+            android:id="@+id/id_text_view_game_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gamecat_color_999999"
+            android:textSize="12sp"
+            tools:text="最近登录: 神鱼"
+            />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/id_image_view_clear_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/game_cat_login_delete" />
+
+
+</RelativeLayout>

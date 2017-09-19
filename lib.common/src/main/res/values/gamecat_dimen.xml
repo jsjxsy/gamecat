@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="dialog_width">240dp</dimen>
+    <dimen name="login_dialog_width">310dp</dimen>
+    <dimen name="login_dialog_height">290dp</dimen>
+    <dimen name="float_window_distance">30dp</dimen>
+    <dimen name="float_window_one">116dp</dimen>
+    <dimen name="float_window_two">160dp</dimen>
+</resources>

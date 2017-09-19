@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="gamecat_clolor_transparent">#00000000</color>
+    <color name="gamecat_clolor_CC0A0D16">#CC0A0D16</color>
+    <color name="gamecat_clolor_D9000000">#D9000000</color>
+</resources>

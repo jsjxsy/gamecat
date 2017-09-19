@@ -1,0 +1,57 @@
+{
+  "version": "1.0.0",
+  "bundles": [
+    {
+      "uri": "main",
+      "pkg": "com.youximao.sdk.app.main"
+    },
+    {
+      "uri": "floatwindow",
+      "pkg": "com.youximao.sdk.app.floatwindow"
+    },
+    {
+      "uri": "forum",
+      "pkg": "com.youximao.sdk.app.forum"
+    },
+    {
+      "uri": "pay",
+      "pkg": "com.youximao.sdk.app.pay"
+    },
+    {
+      "uri": "peckgifts",
+      "pkg": "com.youximao.sdk.app.peckgifts"
+    },
+    {
+      "uri": "personal",
+      "pkg": "com.youximao.sdk.app.personal"
+    },
+    {
+      "uri": "splash",
+      "pkg": "com.youximao.sdk.app.splash"
+    },
+    {
+      "uri": "usercenter",
+      "pkg": "com.youximao.sdk.app.usercenter"
+    },
+    {
+      "uri": "lib.alianalytics",
+      "pkg": "com.youximao.sdk.lib.alianalytics"
+    },
+    {
+      "uri": "lib.common",
+      "pkg": "com.youximao.sdk.lib.common"
+    },
+    {
+      "uri": "lib.style",
+      "pkg": "com.youximao.sdk.lib.style"
+    },
+    {
+      "uri": "logout",
+      "pkg": "com.youximao.sdk.app.logout"
+    },
+    {
+      "uri": "lib.database",
+      "pkg": "com.youximao.sdk.lib.database"
+    }
+  ]
+}

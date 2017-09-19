@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="@dimen/login_dialog_width"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/gamecat_shape_background"
+        android:padding="20dp">
+
+
+        <TextView
+            android:id="@+id/id_text_view_phone_register_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="手机注册"
+            android:textColor="@color/gamecat_color_ffffff"
+            android:textSize="18sp" />
+
+
+        <LinearLayout
+            android:id="@+id/id_layout_input_phone_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_text_view_phone_register_title"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/gamecat_shape_input_background"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <EditText
+                    android:id="@+id/id_edit_text_input_phone"
+                    style="@style/gamecat_item_input_edittext"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:hint="手机号"
+                    android:inputType="number"
+                    android:maxLength="11" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/id_text_view_wrong_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginRight="24dp"
+                        android:text="手机号不正确"
+                        android:textColor="@color/gamecat_color_ffcc00"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/id_image_view_clear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_toLeftOf="@id/id_text_view_wrong_phone"
+                        android:src="@drawable/game_cat_login_clear" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/gamecat_color_e5e5e5" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/id_edit_text_verification_code_phone_register"
+                    style="@style/gamecat_item_input_edittext"
+                    android:drawablePadding="10dp"
+                    android:hint="请输入验证码"
+                    android:inputType="number"
+                    android:maxLength="4" />
+
+
+                <TextView
+                    android:id="@+id/id_text_view_get_verification_phone_register"
+                    style="@style/game_cat_text_view_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:text="获取验证码" />
+
+                <TextView
+                    android:id="@+id/id_text_view_verification_code_phone_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/id_text_view_get_verification_phone_register"
+                    android:text="验证码不正确"
+                    android:textColor="@color/gamecat_color_ffcc00"
+                    android:textSize="10dp"
+
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/gamecat_color_e5e5e5" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/id_password_edit_phone_register"
+                    style="@style/gamecat_item_input_edittext"
+                    android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ"
+                    android:drawablePadding="10dp"
+                    android:hint="密码 (6-18位数字/字母)"
+                    android:inputType="textPassword"
+                    android:maxLength="18" />
+
+                <TextView
+                    android:id="@+id/id_text_view_password_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="11dp"
+                    android:text="密码为6-18位数字/字母"
+                    android:textColor="@color/gamecat_color_ffcc00"
+                    android:textSize="10dp"
+
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/login_button"
+            style="@style/gamecat_button_common"
+            android:layout_below="@id/id_layout_input_phone_register"
+            android:layout_marginTop="10dp"
+            android:text="注 册" />
+    </RelativeLayout>
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

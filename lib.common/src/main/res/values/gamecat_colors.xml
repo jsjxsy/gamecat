@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--login-->
+    <color name="gamecat_hint_color">#9A9A9A</color>
+    <color name="gamecat_color_ffffff">#ffffffff</color>
+    <color name="gamecat_color_ff7e15">#ff7e15</color>
+    <color name="gamecat_color_e8e8e8">#e8e8e8</color>
+    <color name="gamecat_color_f9f9f9">#f9f9f9</color>
+    <color name="gamecat_color_333">#333</color>
+    <color name="gamecat_color_55c8fd">#55c8fd</color>
+    <color name="gamecat_color_b1b1b1">#b1b1b1</color>
+    <color name="gamecat_color_f74c31">#f74c31</color>
+    <color name="gamecat_color_EBBFA4">#EBBFA4</color><!-- #0b751e -->
+    <color name="gamecat_color_background">#D937363B</color>
+    <color name="gamecat_color_login_input_background">#66242635</color>
+    <!-- 支付sdk的颜色值 -->
+    <color name="gamecat_color_37363b">#37363b</color>
+    <color name="gamecat_color_777777">#777777</color>
+    <color name="gamecat_color_dedfe0">#dedfe0</color>
+    <color name="gamecat_color_fd8b04">#fd8b04</color>
+    <color name="gamecat_color_cccccc">#cccccc</color>
+    <color name="gamecat_color_ffcc00">#ffcc00</color>
+
+    <color name="gamecat_color_e5e5e5">#e5e5e5</color>
+    <color name="gamecat_color_37363B">#37363b</color>
+
+
+    <!--颜色值-->
+    <color name="color_F7F7F7">#F7F7F7</color>
+    <color name="color_E5E5E5">#E5E5E5</color>
+    <color name="color_cccccc">#cccccc</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_FFCC00">#FFCC00</color>
+    <color name="color_FF473D">#FF473D</color>
+    <color name="color_FFFFFF">#FFFFFF</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_37363B">#37363B</color>
+    <color name="color_F67B29">#F67B29</color>
+    <color name="color_0a000000">#0a000000</color>
+
+    <color name="gamecat_color_999999">#999999</color>
+    <color name="gamecat_color_aaaaaa">#aaaaaa</color>
+    <color name="gamecat_color_888888">#888888</color>
+    <color name="gamecat_color_f96e30">#f96e30</color>
+    <color name="gamecat_color_f85959">#F85959</color>
+    <color name="gamecat_color_ff9148">#FF9148</color>
+    <drawable name="gamecat_color_999999">#FF999999</drawable>
+    <drawable name="gamecat_color_ffcc00">#ffcc00</drawable>
+    <drawable name="gamecat_color_ff3a4e58">#FF3A4E58</drawable>
+
+    <color name="gamecat_color_33FFFFFF">#33FFFFFF</color>
+    <color name="gamecat_color_333333">#333333</color>
+    <color name="gamecat_color_FF9148">#FF9148</color>
+    <color name="gamecat_color_5E97F6">#5E97F6</color>
+
+    <color name="gamecat_color_f5f6f9">#F5F6F9</color>
+    <color name="gamecat_color_6612142D">#6612142D</color>
+    <color name="gamecat_color_CC000000">#CC000000</color>
+    <color name="gamecat_color_33000000">#33000000</color>
+    <color name="gamecat_color_26262729">#26262729</color>
+    <color name="gamecat_color_FDFDFD">#FDFDFD</color>
+    <color name="gamecat_color_D9000000">#D9000000</color>
+    <color name="gamecat_color_26000000">#26000000</color>
+    <color name="gamecat_color_00000000">#00000000</color>
+    <color name="gamecat_color_F67B29">#F67B29</color>
+    <color name="gamecat_color_000000">#000000</color>
+    <color name="gamecat_color_D2D3D5">#D2D3D5</color>
+    <color name="gamecat_color_D9262729">#D9262729</color>
+
+    <color name="gamecat_color_f7fbff">#F7FBFF</color>
+</resources>

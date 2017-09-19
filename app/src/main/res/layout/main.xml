@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/game_vertical_screen_background">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp">
+
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/gamecat_ic_launcher" />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/youximao_icon" />
+
+        <TextView
+            android:id="@+id/title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/icon"
+            android:text="游戏猫SDKDemo"
+            android:textColor="@color/gamecat_color_333"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/channel_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_name"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/gamecat_color_333"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:id="@+id/click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="15dp">
+
+            <RelativeLayout
+                android:id="@+id/phone_view"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:background="@drawable/gamecat_button_shape_enable">
+
+                <EditText
+                    android:id="@+id/pay_edit"
+                    style="@style/gamecat_item_input_edittext"
+                    android:hint="请输入订单支付金额"
+                    android:inputType="numberDecimal"
+                    android:maxLength="7" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/login"
+                style="@style/gamecat_button_common_orange"
+                android:layout_below="@+id/phone_view"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/gamecat_button_shape_disable"
+                android:text="登录" />
+
+            <Button
+                android:id="@+id/id_button_login_cancel"
+                style="@style/gamecat_button_common_orange"
+                android:layout_below="@+id/login"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/gamecat_button_shape_disable"
+                android:text="注销" />
+
+            <Button
+                android:id="@+id/order"
+                style="@style/gamecat_button_common_orange"
+                android:layout_below="@+id/id_button_login_cancel"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/gamecat_button_shape_disable"
+                android:text="支付" />
+
+            <Button
+                android:id="@+id/gamelogout"
+                style="@style/gamecat_button_common_orange"
+                android:layout_below="@+id/order"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/gamecat_button_shape_disable"
+                android:text="退出游戏" />
+
+
+            <Button
+                android:id="@+id/flash_screen"
+                style="@style/gamecat_button_common_orange"
+                android:layout_below="@+id/gamelogout"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/gamecat_button_shape_disable"
+                android:text="闪屏" />
+
+
+            <Button
+                android:id="@+id/id_button_test"
+                style="@style/gamecat_button_common_orange"
+                android:layout_below="@+id/flash_screen"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/gamecat_button_shape_disable"
+                android:text="配置测试环境" />
+
+            <Button
+                android:id="@+id/id_button_floatwindow"
+                style="@style/gamecat_button_common_orange"
+                android:layout_below="@+id/flash_screen"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/gamecat_button_shape_disable"
+                android:text="浮窗显示测试" />
+
+            <TextView
+                android:id="@+id/listener_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id_button_test"
+                android:layout_marginTop="20dp"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

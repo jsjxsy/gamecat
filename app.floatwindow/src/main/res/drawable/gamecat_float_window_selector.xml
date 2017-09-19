@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/game_cat_float_window_cat_unactivated" android:state_enabled="false" />
+    <item android:drawable="@drawable/game_cat_float_window_cat_activated" android:state_enabled="true" />
+    <item android:drawable="@drawable/game_cat_float_window_cat_unactivated" />
+</selector>

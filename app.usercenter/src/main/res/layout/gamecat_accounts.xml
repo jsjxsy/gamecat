@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".activity.UserActivity">
+
+    <ListView
+        android:id="@+id/id_list_view_switch_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/gamecat_color_f7fbff"
+        android:divider="@color/color_666666"
+        android:dividerHeight="0.5dp"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true"
+        android:scrollbars="vertical"
+        tools:listitem="@layout/gamecat_account_item" />
+</FrameLayout>

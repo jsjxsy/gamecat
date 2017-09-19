@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.UserActivity">
+
+    <RelativeLayout
+        android:layout_width="@dimen/login_dialog_width"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/gamecat_shape_background"
+        android:padding="20dp">
+
+
+        <TextView
+            android:id="@+id/id_text_view_quick_register_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="快速注册"
+            android:textColor="@color/gamecat_color_ffffff"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/id_layout_quick_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id_text_view_quick_register_title"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/gamecat_shape_input_background"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/id_edit_text_quick_register"
+                style="@style/gamecat_item_input_edittext"
+                android:drawablePadding="10dp"
+                android:hint="密码（6-18微数字/密码）"
+                android:inputType="number"
+                android:maxLength="18" />
+
+
+            <com.youximao.sdk.lib.common.common.widget.togglebutton.ToggleButton
+                android:id="@+id/id_switch_quick_register"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:gravity="center" />
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/ic_confirm_button"
+            style="@style/gamecat_button_common"
+            android:layout_below="@id/id_layout_quick_register"
+            android:layout_marginTop="10dp"
+            android:text="进入游戏" />
+
+        <LinearLayout
+            android:id="@+id/id_quick_register_protocol_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ic_confirm_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/game_cat_quick_register_checked_box"
+                android:drawablePadding="4dp"
+                android:text="已经阅读并同意"
+                android:textColor="@color/gamecat_color_999999"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="注册协议"
+                android:textColor="@color/color_FFCC00"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
